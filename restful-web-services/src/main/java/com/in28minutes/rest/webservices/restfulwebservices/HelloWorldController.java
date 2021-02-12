@@ -7,13 +7,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloWorldController {
-    //GET
-    //URI - /hello-world
-    // method - "Hello World"
+
+
     //@RequestMapping(method = RequestMethod.GET, path = "/hello-world")
     @GetMapping("hello-world")
     public String helloWorld() {
         return "HelloWorld";
     }
+
+    //hello-world-bean
+    @GetMapping("hello-world-bean")
+    public HelloWorldBean helloWorldBean(){
+        return new HelloWorldBean("Hello World");
+    }
+
+
 
 }
