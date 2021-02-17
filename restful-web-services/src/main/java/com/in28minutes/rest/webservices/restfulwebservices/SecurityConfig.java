@@ -1,3 +1,4 @@
+/*
 package com.in28minutes.rest.webservices.restfulwebservices;
 
 import org.springframework.context.annotation.Configuration;
@@ -17,4 +18,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .httpBasic();
 
     }
-}
+}*/
